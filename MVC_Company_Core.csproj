@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\SideBarPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Service\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="wwwroot\sass\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\SideBarPartial.cshtml" />
+  </ItemGroup>
+
+</Project>
