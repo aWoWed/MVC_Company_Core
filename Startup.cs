@@ -9,22 +9,56 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MVC_Company_Core.Domain;
+using MVC_Company_Core.Domain.Repositories;
+using MVC_Company_Core.Domain.Repositories.Abstract;
+using MVC_Company_Core.Domain.Repositories.EntityFramework;
+using MVC_Company_Core.Service;
 
 namespace MVC_Company_Core
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
-
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews()
+            Configuration.Bind("Project", new Config());
+
+            services.AddTransient<ITextFieldsRepository, EFTextFieldsRepository>();
+            services.AddTransient<IServiceItemsRepository, EFServiceItemsRepository>();
+            services.AddTransient<DataManager>();
+
+            services.AddDbContext<AppDbContext>(context => context.UseSqlServer(Config.ConnectionString));
+
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.User.RequireUniqueEmail = true;
+                options.Password.RequiredLength = 4;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireDigit = false;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.Name = "myCompanyAw";
+                options.Cookie.HttpOnly = true;
+                options.LoginPath = "/account/login";
+                options.AccessDeniedPath = "/account/accessdenied";
+                options.SlidingExpiration = true;
+            });
+
+                services.AddControllersWithViews()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddSessionStateTempDataProvider();
         }
@@ -35,10 +69,14 @@ namespace MVC_Company_Core
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            app.UseRouting();
 
             app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseCookiePolicy();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

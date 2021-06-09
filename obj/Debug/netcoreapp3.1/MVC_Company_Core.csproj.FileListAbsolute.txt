@@ -1,4 +1,3 @@
-D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\MVC_Company_Core.exe
 D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\MVC_Company_Core.deps.json
@@ -155,3 +154,5 @@ D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\runtimes\unix\
 D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\appsettings.production.json
+D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\appsettings.staging.json

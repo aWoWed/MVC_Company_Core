@@ -12,9 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Domain\" />
     <Folder Include="Pages\Home\" />
-    <Folder Include="Service\" />
     <Folder Include="ViewComponents\" />
   </ItemGroup>
 
