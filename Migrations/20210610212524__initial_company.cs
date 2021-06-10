@@ -51,6 +51,7 @@ namespace MVC_Company_Core.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
+                    TitleImagePath = table.Column<string>(nullable: true),
                     MetaTitle = table.Column<string>(nullable: true),
                     MetaDescription = table.Column<string>(nullable: true),
                     MetaKeywords = table.Column<string>(nullable: true),
@@ -70,6 +71,7 @@ namespace MVC_Company_Core.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     Subtitle = table.Column<string>(nullable: true),
+                    TitleImagePath = table.Column<string>(nullable: true),
                     MetaTitle = table.Column<string>(nullable: true),
                     MetaDescription = table.Column<string>(nullable: true),
                     MetaKeywords = table.Column<string>(nullable: true),
@@ -192,21 +194,21 @@ namespace MVC_Company_Core.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "6216c364-e75a-4617-8439-5e4963cf7ee1", "1331c59c-2a96-4245-8a52-d61ec092e37e", "admin", "ADMIN" });
+                values: new object[] { "6216c364-e75a-4617-8439-5e4963cf7ee1", "8b750b40-b7da-45c5-8931-4f52cbe7f3ff", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "6039d1f4-2ffe-4d3f-84c5-8ae2e6daaf68", 0, "4276384d-14e7-4d94-a1db-31b9ae0b6fe8", "messi5serg@gmail.com", true, false, null, "MESSI5SERG@GMAIL.COM", "AWOWED", "AQAAAAEAACcQAAAAEJL8vScVI7nQ5y35TJGzpc9aHA3zVzIxVTCT2rQQFvdenL1mw67gr2RHuqw/xGsZmg==", null, false, "", false, "awowed" });
+                values: new object[] { "6039d1f4-2ffe-4d3f-84c5-8ae2e6daaf68", 0, "700898d3-7f40-4d09-aa1d-260b07223aee", "messi5serg@gmail.com", true, false, null, "MESSI5SERG@GMAIL.COM", "AWOWED", "AQAAAAEAACcQAAAAEN4pmYtcofecP31Uo6l3YBOU9HRcFwYR36noSM5R8Vm3xRUKKM3iLE4UhPPfjuMZGw==", null, false, "", false, "awowed" });
 
             migrationBuilder.InsertData(
                 table: "TextFields",
-                columns: new[] { "Id", "CodeWord", "Date", "MetaDescription", "MetaKeywords", "MetaTitle", "Subtitle", "Text", "Title" },
+                columns: new[] { "Id", "CodeWord", "Date", "MetaDescription", "MetaKeywords", "MetaTitle", "Subtitle", "Text", "Title", "TitleImagePath" },
                 values: new object[,]
                 {
-                    { new Guid("fc00f9a1-b149-4097-9298-3b453f6e623c"), "PageIndex", new DateTime(2021, 6, 9, 23, 24, 50, 522, DateTimeKind.Utc).AddTicks(568), null, null, null, null, null, "Main" },
-                    { new Guid("b83dfd24-9bf6-445d-928a-c91cccd07adc"), "PageServices", new DateTime(2021, 6, 9, 23, 24, 50, 522, DateTimeKind.Utc).AddTicks(1472), null, null, null, null, null, "Our Services" },
-                    { new Guid("f915b8ea-1ee8-4ffb-a747-d3dd15e795b5"), "PageContacts", new DateTime(2021, 6, 9, 23, 24, 50, 522, DateTimeKind.Utc).AddTicks(1511), null, null, null, null, null, "Our Contacts" }
+                    { new Guid("fc00f9a1-b149-4097-9298-3b453f6e623c"), "PageIndex", new DateTime(2021, 6, 10, 21, 25, 23, 915, DateTimeKind.Utc).AddTicks(785), null, null, null, null, "Admin only can fill it", "Main", null },
+                    { new Guid("b83dfd24-9bf6-445d-928a-c91cccd07adc"), "PageServices", new DateTime(2021, 6, 10, 21, 25, 23, 915, DateTimeKind.Utc).AddTicks(1696), null, null, null, null, "Admin only can fill it", "Our Services", null },
+                    { new Guid("f915b8ea-1ee8-4ffb-a747-d3dd15e795b5"), "PageContacts", new DateTime(2021, 6, 10, 21, 25, 23, 915, DateTimeKind.Utc).AddTicks(1785), null, null, null, null, "Admin only can fill it", "Our Contacts", null }
                 });
 
             migrationBuilder.InsertData(

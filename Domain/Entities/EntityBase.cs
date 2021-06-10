@@ -23,7 +23,10 @@ namespace MVC_Company_Core.Domain.Entities
 
         [Display(Name = "Text")]
         public virtual string Text { get; set; }
-        
+
+        [Display(Name = "Title image")]
+        public virtual string TitleImagePath { get; set; }
+
         [Display(Name = "SEO Metatag Title")]
         public virtual string MetaTitle { get; set; }
 

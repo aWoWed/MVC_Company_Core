@@ -12,10 +12,10 @@ namespace MVC_Company_Core.Domain.Entities
         [Required] 
         public string CodeWord { get; set; }
 
-        [Display(Name = "Title name")]
-        public override string Title { get; set; }
+        [Display(Name = "Title name")] 
+        public override string Title { get; set; } = "Info title";
 
-        [Display(Name = "Text contained")]
+        [Display(Name = "Text contained")] 
         public override string Text { get; set; }
     }
 }

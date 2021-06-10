@@ -13,6 +13,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
+#line 2 "D:\Epam\MVC_Company_Core\MVC_Company_Core\Views\_ViewImports.cshtml"
+using MVC_Company_Core.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "D:\Epam\MVC_Company_Core\MVC_Company_Core\Views\Shared\MetaTagsPartial.cshtml"
 using MVC_Company_Core.Service;
 
@@ -20,6 +27,7 @@ using MVC_Company_Core.Service;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6e20d3114f0493bdcd8550815fb93d18870102a8", @"/Views/Shared/MetaTagsPartial.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b6a3124bed6ae09ef4619836bd2c58f84eef2ff9", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_MetaTagsPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

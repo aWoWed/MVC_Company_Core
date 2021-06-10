@@ -26,7 +26,6 @@ D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Sh
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Shared\MetaTagsPartial.cshtml.g.cs
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ScriptsPartial.cshtml.g.cs
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\ViewImports.cshtml.g.cs
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\MVC_Company_Core.RazorTargetAssemblyInfo.cache
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\MVC_Company_Core.RazorTargetAssemblyInfo.cs
@@ -156,3 +155,10 @@ D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\runtimes\win\l
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\appsettings.production.json
 D:\Epam\MVC_Company_Core\MVC_Company_Core\bin\Debug\netcoreapp3.1\appsettings.staging.json
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\TextFields\Edit.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ServiceItems\Edit.cshtml.g.cs

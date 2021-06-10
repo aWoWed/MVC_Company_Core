@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_Company_Core.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210609232450__initial_company")]
+    [Migration("20210610212524__initial_company")]
     partial class _initial_company
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,6 +49,9 @@ namespace MVC_Company_Core.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TitleImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("ServiceItems");
@@ -85,6 +88,9 @@ namespace MVC_Company_Core.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TitleImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("TextFields");
@@ -94,21 +100,24 @@ namespace MVC_Company_Core.Migrations
                         {
                             Id = new Guid("fc00f9a1-b149-4097-9298-3b453f6e623c"),
                             CodeWord = "PageIndex",
-                            Date = new DateTime(2021, 6, 9, 23, 24, 50, 522, DateTimeKind.Utc).AddTicks(568),
+                            Date = new DateTime(2021, 6, 10, 21, 25, 23, 915, DateTimeKind.Utc).AddTicks(785),
+                            Text = "Admin only can fill it",
                             Title = "Main"
                         },
                         new
                         {
                             Id = new Guid("b83dfd24-9bf6-445d-928a-c91cccd07adc"),
                             CodeWord = "PageServices",
-                            Date = new DateTime(2021, 6, 9, 23, 24, 50, 522, DateTimeKind.Utc).AddTicks(1472),
+                            Date = new DateTime(2021, 6, 10, 21, 25, 23, 915, DateTimeKind.Utc).AddTicks(1696),
+                            Text = "Admin only can fill it",
                             Title = "Our Services"
                         },
                         new
                         {
                             Id = new Guid("f915b8ea-1ee8-4ffb-a747-d3dd15e795b5"),
                             CodeWord = "PageContacts",
-                            Date = new DateTime(2021, 6, 9, 23, 24, 50, 522, DateTimeKind.Utc).AddTicks(1511),
+                            Date = new DateTime(2021, 6, 10, 21, 25, 23, 915, DateTimeKind.Utc).AddTicks(1785),
+                            Text = "Admin only can fill it",
                             Title = "Our Contacts"
                         });
                 });
@@ -143,7 +152,7 @@ namespace MVC_Company_Core.Migrations
                         new
                         {
                             Id = "6216c364-e75a-4617-8439-5e4963cf7ee1",
-                            ConcurrencyStamp = "1331c59c-2a96-4245-8a52-d61ec092e37e",
+                            ConcurrencyStamp = "8b750b40-b7da-45c5-8931-4f52cbe7f3ff",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -242,13 +251,13 @@ namespace MVC_Company_Core.Migrations
                         {
                             Id = "6039d1f4-2ffe-4d3f-84c5-8ae2e6daaf68",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4276384d-14e7-4d94-a1db-31b9ae0b6fe8",
+                            ConcurrencyStamp = "700898d3-7f40-4d09-aa1d-260b07223aee",
                             Email = "messi5serg@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MESSI5SERG@GMAIL.COM",
                             NormalizedUserName = "AWOWED",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJL8vScVI7nQ5y35TJGzpc9aHA3zVzIxVTCT2rQQFvdenL1mw67gr2RHuqw/xGsZmg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEN4pmYtcofecP31Uo6l3YBOU9HRcFwYR36noSM5R8Vm3xRUKKM3iLE4UhPPfjuMZGw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
