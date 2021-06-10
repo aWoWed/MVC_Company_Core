@@ -162,3 +162,8 @@ D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Ad
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\TextFields\Edit.cshtml.g.cs
 D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ServiceItems\Edit.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contacts.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Services\Index.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Services\Show.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Sidebar\Default.cshtml.g.cs
+D:\Epam\MVC_Company_Core\MVC_Company_Core\obj\Debug\netcoreapp3.1\Razor\Views\Shared\SidebarPartial.cshtml.g.cs
